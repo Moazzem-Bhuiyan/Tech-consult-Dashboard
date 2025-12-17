@@ -1,6 +1,5 @@
 "use client";
 
-import { LogoSvg } from "@/assets/logos/LogoSvg";
 import FormWrapper from "@/components/Form/FormWrapper";
 import UOtpInput from "@/components/Form/UOtpInput";
 import { otpSchema } from "@/schema/authSchema";
