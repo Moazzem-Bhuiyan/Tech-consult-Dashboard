@@ -10,7 +10,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "@/assets/images/logo.png";
-import { Color } from "antd/es/color-picker";
 import { useRouter } from "next/navigation";
 import { useResetPasswordMutation } from "@/redux/api/authApi";
 
