@@ -21,7 +21,7 @@ export default function SetPasswordForm() {
     try {
       const res = await resetPassword(data).unwrap();
       if (res?.success) {
-        toast.success(res?.message || "Password reset successfully");
+        toast.success(res?.message || "Password  reset successfully");
         localStorage.removeItem("forgetPasswordToken");
         router.push("/login");
       }
