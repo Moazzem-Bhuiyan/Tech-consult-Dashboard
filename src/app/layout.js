@@ -27,11 +27,11 @@ const Mont_serrat = Montserrat({
 
 export const metadata = {
   title: {
-    default: "SkySync-App-Dashboard",
-    template: "%s | SkySync-App-Dashboard",
+    default: "PEC-Dashboard",
+    template: "%s | PECDashboard",
   },
   description:
-    "SkySync App Dashboard - Manage and monitor your SkySync applications with ease.",
+    "PEC-Dashboard is a comprehensive platform designed to streamline project management, enhance team collaboration, and boost productivity for businesses of all sizes.",
 };
 
 export default function RootLayout({ children }) {
