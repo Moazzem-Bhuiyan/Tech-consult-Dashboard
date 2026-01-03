@@ -70,6 +70,7 @@ export default function AddserviceModal({ open, setOpen }) {
       const result = await addService(formData).unwrap();
       if (result.success) {
         toast.success("Service created successfully");
+        setFileList([]);
       }
       setOpen(false);
       setFileList([]);

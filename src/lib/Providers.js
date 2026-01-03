@@ -10,9 +10,7 @@ export default function Providers({ children }) {
   return (
     <AntdRegistry>
       <ConfigProvider theme={mainTheme}>{children}</ConfigProvider>
-
       <NextTopLoader />
-
       <Toaster />
     </AntdRegistry>
   );

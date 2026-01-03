@@ -3,6 +3,7 @@ import { DM_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 import Providers from "../lib/Providers";
 import ReduxProviders from "@/redux/lib/ReduxProvider";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const generalSans = localFont({
   src: "../assets/fonts/GeneralSans-Variable.woff2",
@@ -27,8 +28,8 @@ const Mont_serrat = Montserrat({
 
 export const metadata = {
   title: {
-    default: "PEC-Dashboard",
-    template: "%s | PECDashboard",
+    default: "PEC Dashboard",
+    template: "%s | PEC-Dashboard",
   },
   description:
     "PEC-Dashboard is a comprehensive platform designed to streamline project management, enhance team collaboration, and boost productivity for businesses of all sizes.",
@@ -61,11 +62,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${generalSans.className} ${Mont_serrat.variable} box-border antialiased`}
       >
-        <Providers>
-          <ReduxProviders>
-            <Providers>{children}</Providers>
-          </ReduxProviders>
-        </Providers>
+        <AntdRegistry>
+          <Providers>
+            <ReduxProviders>
+              <Providers>{children}</Providers>
+            </ReduxProviders>
+          </Providers>
+        </AntdRegistry>
       </body>
     </html>
   );
